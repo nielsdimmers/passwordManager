@@ -1,2 +1,2 @@
-# passwordManager
-Just a simple, password manager based on Diceware.
+# password generator
+Just a simple, password generator based on Diceware.

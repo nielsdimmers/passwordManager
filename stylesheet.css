@@ -1,0 +1,163 @@
+/* colors:
+Dark: #777CA8
+Light: #A49DED
+Normal: #96A3CD
+Highlight 1: #8DB1C7
+Highlight 2: #9BDCBD
+*/
+
+:root {
+  --dark:					#777CA8;
+  --light:				#A49DED;
+  --normal:				#96A3CD;
+  --highlight-1:	#8DB1C7;
+  --highlight-2:	#9BDCBD;
+}
+
+body {
+	background-color: var(--normal);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--normal);
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+#password {
+	display: table;
+	margin-left:auto;
+	margin-right:auto;
+	width: 30%;
+		border-spacing: 5px;
+}
+
+.passwordBit {
+	display: table-row;
+	display: block;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.numberCell {
+	display: table-cell;
+	padding: 5px;
+}
+
+.wordCell {
+	background-color: var(--highlight-1);
+	color: var(--dark);
+	box-shadow: 2px 2px 5px var(--dark);
+}
+
+.number {
+	width: 50px;
+	text-align: center;
+	font-size: 24px;
+	border: none;
+	background-color: var(--highlight-2);
+	color: var(--dark);
+	height: 50px;
+	box-shadow: 2px 2px 5px var(--dark);
+}
+
+.word {
+	font-size: 24px;
+	font-family:arial;
+	min-width: 200px;
+
+}
+
+#totalPasswordBox {
+	display:block;
+	width: 50%;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+#yourPasswordBox {
+	display:inline;
+	font-family:arial;
+	font-size: 24px;
+	color: var(--dark);
+	padding-right: 5px;
+}
+
+#totalPassword {
+	display:inline;
+	border:none;
+	font-size: 24px;
+	background-color: var(--highlight-1);
+	color: var(--dark);
+	padding: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	margin-top: 20px;
+	font-family:arial;
+	box-shadow: 2px 2px 5px var(--dark);
+}
+
+#footerbox, #buttonsBox {
+	text-align:center;
+	margin-top: 20px;
+	display:block;
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.button {
+	font-size: 24px;
+	padding: 4px;
+	padding-left: 10px;
+	padding-right:10px;
+	font-family: arial;
+	background-color: var(--highlight-2);
+	border-color: var(--dark);
+	color: var(--dark);
+	box-shadow: 2px 2px 5px var(--dark);
+}
+
+.footerlink {
+	font-size: 24px;
+	font-family: arial;
+	color: var(--dark);
+	padding-left: 10px;
+	padding-right:10px;
+}
+
+.footerlink:hover {
+	color: var(--highlight-2);
+	text-decoration: none;
+}
+

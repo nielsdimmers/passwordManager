@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript" src="words.json"></script>
+<script type="text/javascript" src="passwordScript.js"></script>
+<script type="text/javascript">
+  pwGenerator = new passwordGenerator();
+</script>
+<link rel = "stylesheet" type = "text/css" href = "stylesheet.css" />
+</head>
+<body>
+<div class="outer">
+<div class="middle">
+<div class="inner">
+	<div id="password">
+		<div class="passwordBit">
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell wordCell"><div class="word"> </div></div>
+		</div>
+		<div class="passwordBit">
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell wordCell"><div class="word"> </div></div>
+		</div>
+		<div class="passwordBit">
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell wordCell"><div class="word"> </div></div>
+		</div>
+		<div class="passwordBit">
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell"><input type="number" class="number" min="1" max="6"></div>
+			<div class="numberCell wordCell"><div class="word"> </div></div>
+		</div>
+	</div> <!--password -->
+		<div id="totalPasswordBox">
+			<div id="yourPasswordBox">Your password: </div>
+			<div type="text" id="totalPassword"></div>
+		</div>
+		<div id="buttonsBox">
+			<button type="button" class="button" onclick="pwGenerator.generateRandomPassword()">Randomly generate password</button>
+			<button type="button" class="button" onclick="pwGenerator.generatePasswordFromGivenValues()">Generate based on given values</button>
+			<button type="button" class="button" onclick="pwGenerator.addBit()">+</button>
+			<button type="button" class="button" onclick="pwGenerator.removeBit()">-</button>
+		</div>
+		<div id="footerbox">
+			<a class="footerlink" target="_blank" href="https://youtu.be/Pe_3cFuSw1E">SOURCE</a>
+			<a class="footerlink" href="https://docs.google.com/forms/d/e/1FAIpQLSdlNoRgnFU1VSvkqqEVvWACvkgpHzICijjfT23EDY_ksITp5w/viewform?usp=sf_link">CONTACT</a>
+			<a class="footerlink" target="_blank" href="Github">GITHUB</a>
+		</div>
+		
+</div> <!-- Inner -->
+</div> <!-- Middle -->
+</div> <!-- Outer -->
+</body>
+</html>

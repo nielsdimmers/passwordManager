@@ -89,6 +89,11 @@ input[type=number] {
 	box-shadow: 2px 2px 5px var(--dark);
 }
 
+.number:invalid {
+	background-color: var(--light);
+	box-shadow: 2px 2px 5px var(--highlight-2);
+}
+
 .word {
 	font-size: 24px;
 	font-family:arial;
